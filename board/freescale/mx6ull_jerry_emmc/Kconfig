@@ -1,0 +1,18 @@
+if TARGET_MX6ULL_JERRY_EMMC
+
+config SYS_BOARD
+	default "mx6ull_jerry_emmc"
+
+config SYS_VENDOR
+	default "freescale"
+
+config SYS_CONFIG_NAME
+	default "mx6ull_jerry_emmc"
+
+config IMX_CONFIG
+	default "board/freescale/mx6ull_jerry_emmc/imximage.cfg"
+
+config SYS_TEXT_BASE
+	default 0x87800000
+
+endif
