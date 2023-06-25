@@ -9,8 +9,8 @@
 #include "imx6ul-14x14-evk-u-boot.dtsi"
 
 / {
-	model = "i.MX6 ULL 14x14 EVK Board";
-	compatible = "fsl,imx6ull-14x14-evk", "fsl,imx6ull";
+	model = "i.MX6 ULL 14x14 JERRY Board";
+	compatible = "fsl,imx6ull-14x14-jerry", "fsl,imx6ull";
 };
 
 &clks {

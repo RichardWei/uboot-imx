@@ -96,7 +96,7 @@
 	"console=ttymxc0\0" \
 	"fdt_high=0xffffffff\0" \
 	"initrd_high=0xffffffff\0" \
-	"fdt_file=undefined\0" \
+	"fdt_file=imx6ull-14x14-jerry-emmc\0" \
 	"fdt_addr=0x83000000\0" \
 	"tee_addr=0x84000000\0" \
 	"tee_file=undefined\0" \
@@ -175,7 +175,7 @@
 				"if test $board_name = EVK && test $board_rev = 9X9; then " \
 					"setenv fdt_file imx6ull-9x9-evk.dtb; fi; " \
 				"if test $board_name = EVK && test $board_rev = 14X14; then " \
-					"setenv fdt_file imx6ull-14x14-evk.dtb; fi; " \
+					"setenv fdt_file  imx6ull-14x14-jerry-emmc.dtb; fi; " \
 				"if test $fdt_file = undefined; then " \
 					"echo WARNING: Could not determine dtb to use; " \
 				"fi; " \
