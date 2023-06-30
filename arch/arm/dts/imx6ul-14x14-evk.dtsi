@@ -39,10 +39,10 @@
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_spi4>;
 		status = "okay";
-		pinctrl-assert-gpios = <&gpio5 8 GPIO_ACTIVE_LOW>;
+		/*pinctrl-assert-gpios = <&gpio5 8 GPIO_ACTIVE_LOW>;*/
 		gpio-sck = <&gpio5 11 0>;
 		gpio-mosi = <&gpio5 10 0>;
-		cs-gpios = <&gpio5 7 0>;
+		/*cs-gpios = <&gpio5 7 0>;*/
 		num-chipselects = <1>;
 		#address-cells = <1>;
 		#size-cells = <0>;
@@ -582,4 +582,20 @@
 			MX6UL_PAD_LCD_RESET__WDOG1_WDOG_ANY    0x30b0
 		>;
 	};
+
+	pinctrl_enet1_reset: enet1resetgrp {
+			fsl,pins = <
+				MX6ULL_PAD_SNVS_TAMPER7__GPIO5_IO07	0x10B0
+			>;
+			};
+
+		/* zuozhongkai enet2 rset */
+		pinctrl_enet2_reset: enet2resetgrp {
+			fsl,pins = <
+				MX6ULL_PAD_SNVS_TAMPER8__GPIO5_IO08 0x10b0 /* ENET2 RESET */
+			>;
+		};
+
+
+
 };
