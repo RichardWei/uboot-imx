@@ -80,6 +80,7 @@
 
 &fec1 {
 	pinctrl-names = "default";
+	mac-address = [ 25 bc 1a 9d 1f 51 ];
 	pinctrl-0 = <&pinctrl_enet1&pinctrl_enet1_reset>;
 	phy-mode = "rmii";
 	phy-handle = <&ethphy0>;
@@ -89,6 +90,7 @@
 
 &fec2 {
 	pinctrl-names = "default";
+	mac-address = [ 29 30 1a 9d 11 51 ];
 	pinctrl-0 = <&pinctrl_enet2&pinctrl_enet2_reset>;
 	phy-mode = "rmii";
 	phy-handle = <&ethphy1>;
